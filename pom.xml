@@ -141,7 +141,8 @@
 
     <profiles>
         <profile>
-            <!-- All the quickstarts that require Postgres to be running -->
+            <!-- All the modules that require nothing but JBoss Enterprise
+                    Application Platform or JBoss EAP -->
             <id>default</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -151,8 +152,6 @@
                 </property>
             </activation>
             <modules>
-                <!-- All the modules that require nothing but JBoss Enterprise
-                    Application Platform or JBoss EAP -->
                 <module>bean-validation</module>
                 <module>bmt</module>
                 <module>cdi-alternative</module>
@@ -203,6 +202,7 @@
                 <module>tasks-jsf</module>
                 <module>tasks-rs</module>
                 <module>temperature-converter</module>
+                <module>websocket-hello</module>
                 <module>wicket-ear</module>
                 <module>wicket-war</module>
                 <module>xml-dom4j</module>
